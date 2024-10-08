@@ -1,1 +1,1 @@
-print("hello world mine8")
+print("hello world mines8")
