@@ -5,7 +5,7 @@ pipeline {
             }
       }
     triggers {
-        pollSCM '*/2 * * * *'
+        pollSCM '*/1 * * * *'
     }
     stages {
         stage('Build') {
@@ -23,7 +23,7 @@ pipeline {
                 sh '''
                 cd myapp
                 python3 hello.py
-                python3 hello.py --name=Andrew
+                python3 hello.py --name=Update1
                 '''
             }
         }
